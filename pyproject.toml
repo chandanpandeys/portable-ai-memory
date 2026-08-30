@@ -1,0 +1,17 @@
+[project]
+name = "portable-memory-os"
+version = "0.1.0"
+description = "Lossless portable memory layer for AI chat histories"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.12.4,<2"]
+
+[project.scripts]
+memory-import-chatgpt = "memory_os.chatgpt_importer:main"
+memory-search = "memory_os.search:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
