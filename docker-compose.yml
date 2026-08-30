@@ -1,0 +1,9 @@
+services:
+  memory-mcp:
+    build: .
+    environment:
+      MEMORY_DB_PATH: /data/memory.sqlite
+    volumes:
+      - ./output/memory.sqlite:/data/memory.sqlite:ro
+    ports:
+      - "8000:8000"
