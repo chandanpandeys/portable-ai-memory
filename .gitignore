@@ -1,0 +1,27 @@
+# Private memory data — NEVER commit
+chat.html
+conversations-*.json
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+output/
+data/
+exports/
+canonical/
+CAPABILITY_TOKEN.txt
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
