@@ -1,16 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "portable-memory-os"
+name = "portable-ai-memory"
 version = "0.1.0"
-description = "Lossless portable memory layer for AI chat histories"
+description = "Open-source, vendor-neutral, source-backed memory for AI conversations and agents"
+readme = "README.md"
 requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+keywords = ["ai", "memory", "mcp", "chatgpt", "agents", "sqlite", "retrieval"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Database",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/chandanpandeys/portable-ai-memory"
+Repository = "https://github.com/chandanpandeys/portable-ai-memory"
+Issues = "https://github.com/chandanpandeys/portable-ai-memory/issues"
+Changelog = "https://github.com/chandanpandeys/portable-ai-memory/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 mcp = ["mcp>=1.12.4,<2"]
+dev = ["pytest>=8", "build>=1.2"]
 
 [project.scripts]
 memory-import-chatgpt = "memory_os.chatgpt_importer:main"
 memory-search = "memory_os.search:main"
+
+[tool.setuptools.packages.find]
+include = ["memory_os*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
