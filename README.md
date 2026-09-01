@@ -2,6 +2,12 @@
 
 **One memory layer for all your AI tools.**
 
+## About
+
+Portable AI Memory is an open-source, privacy-first memory layer for AI. It helps people preserve their conversation history, decisions, projects, and long-term context in a vendor-neutral format, then reuse that memory across tools such as ChatGPT, Claude, Gemini, Codex, Cursor, Hermes, and other MCP-compatible agents.
+
+The project is built around a simple principle: **your AI memory should belong to you**. Original conversations remain the source of truth, while search indexes, context packs, embeddings, summaries, and knowledge graphs are treated as rebuildable derived layers. The software can be public and collaborative while every user's actual memory remains private and self-owned.
+
 Portable AI Memory is an open-source, vendor-neutral, source-backed memory system that lets people carry their conversation history, decisions, projects, and context across AI products without depending on one provider's built-in memory.
 
 The long-term goal is simple:
